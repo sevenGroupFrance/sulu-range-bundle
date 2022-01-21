@@ -13,10 +13,10 @@ This bundle will import a range input. The range input used is from [react-range
 2. Download the [package](https://packagist.org/packages/sevengroupfrance/sulu-range-bundle) in your project with the following command line:\
 `composer require sevengroupfrance/sulu-range-bundle`.
 3. In `config/bundles.php` add the following code:\
-`SevenGroupFrance\SuluRangeBundle\SuluRange::class => ['all' => true]`.
+`SevenGroupFrance\SuluRangeBundle\RangeBundle::class => ['all' => true]`.
 
 4. In `assets/admin/package.json`, add the following line in the "dependencies" object:\
-`"sulu-color-picker-bundle": "file:node_modules/@sulu/vendor/sevengroupfrance/sulu-range-bundle/src/Resources/js"`.
+`"sulu-range-bundle": "file:node_modules/@sulu/vendor/sevengroupfrance/sulu-range-bundle/src/Resources/js"`.
 
 5. In `assets/admin`, `npm install` to initialize the bundle's symlink directory.
 6. In `assets/admin/index.js`, add this line:\
