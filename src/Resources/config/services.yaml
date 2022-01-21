@@ -2,6 +2,6 @@ services:
   _defaults:
     autowire: true
     autoconfigure: true
-  sulu_range:
+  range:
     class: SevenGroupFrance\SuluRangeBundle\Content\Types\SuluRange
-    tags: [{ name: "sulu.content.type", alias: "sulu_range" }]
+    tags: [{ name: "sulu.content.type", alias: "range" }]
