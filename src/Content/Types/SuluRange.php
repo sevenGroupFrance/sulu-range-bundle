@@ -8,6 +8,6 @@ class SuluRange extends SimpleContentType
 {
     public function __construct()
     {
-        parent::__construct("sulu_range");
+        parent::__construct("range");
     }
 }
