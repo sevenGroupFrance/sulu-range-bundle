@@ -1,4 +1,4 @@
 import { fieldRegistry } from 'sulu-admin-bundle/containers';
-import CustomToggle from './components/CustomToggle/CustomToggle';
+import SuluRange from './components/SuluRange/SuluRange';
 
-fieldRegistry.add('custom_toggle', CustomToggle);
+fieldRegistry.add('sulu_range', SuluRange);
