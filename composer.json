@@ -1,5 +1,5 @@
 {
-    "name": "sevengroupfrance/sulu-custom-toggle-bundle",
+    "name": "sevengroupfrance/sulu-range-bundle",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -14,13 +14,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "SevenGroupFrance\\SuluCustomToggleBundle\\": "src"
+            "SevenGroupFrance\\SuluRangeBundle\\": "src"
         }
     },
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/sevenGroupFrance/sulu-custom-toggle-bundle/"
+            "url": "https://github.com/sevenGroupFrance/sulu-range-bundle/"
         },
         {
             "type": "path",
