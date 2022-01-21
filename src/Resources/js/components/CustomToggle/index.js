@@ -1,3 +1,3 @@
-import CustomToggle from "./CustomToggle";
+import SuluRange from "./SuluRange";
 
-export default CustomToggle;
+export default SuluRange;
