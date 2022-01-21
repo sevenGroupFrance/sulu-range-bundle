@@ -1,0 +1,7 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+  custom_toggle:
+    class: SevenGroupFrance\SuluCustomToggleBundle\Content\Types\CustomToggle
+    tags: [{ name: "sulu.content.type", alias: "custom_toggle" }]
