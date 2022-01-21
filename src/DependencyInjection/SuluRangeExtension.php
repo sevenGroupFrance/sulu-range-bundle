@@ -1,5 +1,5 @@
 <?php
-namespace SevenGroupFrance\SuluCustomToggleBundle\DependencyInjection;
+namespace SevenGroupFrance\SuluRangeBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\Loader;
 /**
  * SecurityHeadersExtension
  */
-class CustomToggleExtension extends Extension
+class SuluRangeExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
