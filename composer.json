@@ -1,0 +1,29 @@
+{
+    "name": "sevengroupfrance/sulu-range-bundle",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tenreiro Benjamin",
+            "email": "tenreiro.benjamin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SevenGroupFrance\\SuluRangeBundle\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sevenGroupFrance/sulu-range-bundle/"
+        },
+        {
+            "type": "path",
+            "url": "../../../assets/admin/node_modules",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
+}
