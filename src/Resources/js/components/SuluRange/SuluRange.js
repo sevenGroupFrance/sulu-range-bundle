@@ -17,7 +17,7 @@ class SuluRange extends React.PureComponent {
     const div = document.querySelectorAll('div.range-container')
     for (let i = 0; i < div.length; i++) {
       const rangeCont = div[i].parentElement.parentElement.parentElement
-      rangeCont.classList.add("range-label") 
+      rangeCont.classList.add("range-label")
       const fieldCont = div[i].parentElement.parentElement
       fieldCont.classList.add("range-field-container")
     }
@@ -32,16 +32,37 @@ class SuluRange extends React.PureComponent {
 
   render() {
     const { value: value } = this.props;
+
     const finalValue = value !== undefined
       ? value
       : this.state.value
+    const min = this.props.schemaOptions.min !== undefined
+      ? this.props.schemaOptions.min.value
+      : MIN;
+    const max = this.props.schemaOptions.max !== undefined
+      ? this.props.schemaOptions.max.value
+      : MAX;
+    const step = this.props.schemaOptions.step !== undefined
+      ? this.props.schemaOptions.step.value
+      : STEP;
+    const ratio = this.props.schemaOptions.ratio !== undefined
+      ? this.props.schemaOptions.ratio.value
+      : false;
+    let output;
+
+    if (ratio) {
+      output = `${[finalValue][0]} / ${max - [finalValue][0]}`
+    } else {
+      output = [finalValue][0]
+    }
+
     return (
       <div className="range-container">
         <Range
           values={[finalValue]}
-          step={STEP}
-          min={MIN}
-          max={MAX}
+          step={step}
+          min={min}
+          max={max}
           onChange={this.handleChange}
           renderTrack={({ props, children }) => (
             <div
@@ -63,8 +84,8 @@ class SuluRange extends React.PureComponent {
                   background: getTrackBackground({
                     values: [finalValue],
                     colors: ["#548BF4", "#ccc"],
-                    min: MIN,
-                    max: MAX
+                    min: min,
+                    max: max
                   }),
                   alignSelf: "center"
                 }}
@@ -100,7 +121,7 @@ class SuluRange extends React.PureComponent {
           )}
         />
         <output className="output">
-          {[finalValue][0]} / { 100 - [finalValue][0] }
+          {output}
         </output>
       </div>
     );
