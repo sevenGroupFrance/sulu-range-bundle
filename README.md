@@ -54,7 +54,8 @@ The following parameters are available:\
 `step`(number): sets the step value (same as step attribute in html range input)\
 `ratio`(bool): sets how the output is rendered
 
-If set to true, the `ratio` parameter will display the output like a ratio like this:\
+If set to true, the `ratio` parameter will display the output like a ratio like this:
+
 ![The radio rendered output](assets/img/range-1.png)
 
 For further settings, please refer to the react-range github's [readme](https://github.com/tajo/react-range)
