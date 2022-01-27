@@ -36,7 +36,7 @@ Once installed, to use this new content type, you'll have to create a new proper
 ```
 
 ## Setting the step, min and max values
-Starting v1.O.1, you can configure your own basic values.
+Starting v1.0.1, you can configure your own basic values.
 To do so you will have to set several `parameters` in your sulu xml file template.
 ```
 <property name="size" type="sulu_range">
